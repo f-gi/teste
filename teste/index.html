@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="teste.css">
+	<meta charset="utf-8">	  
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="func.js"></script>
+	
+</head>
+<body>
+	<nav> <!-- barra de navegação -->
+		<ul>
+			<li>
+				<button id="menu" class="agr"> <!-- botão hamburger -->
+					<div class="linha"></div>
+					<div class="linha"></div>
+					<div class="linha"></div>
+				</button>
+			</li>
+
+			<li>
+				<button onclick="getLocation()" id="pin" class="agr">
+					<img src="img/pin.png">
+				</button>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="conteudo"> <!-- modal do menu hamburguer -->
+		
+		<div class="bx"> <!-- apagar class dps -->
+			<button id="b5" class="x"> <!-- botão x -->
+				<div class="linha li1"></div>
+				<div class="linha li2"></div>
+				<div class="linha li3"></div>
+			</button>
+		</div>	
+
+		<div class="menu bx" id="bt6">
+			<p>Ainda não é cliente?</p>
+		</div>
+
+		<div id="cadastro">
+			<p id="titulo_campo">Cadastre-se agora, é só preencher o formulário a baixo e entraremos em contato com você!</p> <br>
+
+			<form>
+				<label for="nome"> <p class="nome_campo">Nome</p> </label>
+				<input id="nome" type="text" class="campo" required> <br>
+
+				<label for="email"> <p class="nome_campo">Email</p> </label>
+				<input id="email" type="email" class="campo" required> <br>
+
+				<label for="telefone"> <p class="nome_campo">Telefone</p> </label>
+				<input id="telefone" type="number" class="campo" required> <br>
+
+				<label for="mensagem"> <p class="nome_campo">Mensagem</p> </label>
+				<textarea cols="35" rows="8" id="mensagem"  required style="display: block; margin: 0 auto;"></textarea><br>
+
+				<input type="submit" class="campo" id="enviar">
+				<!-- <button type="submit" id="enviar"></button> -->
+			</form>
+		</div>
+
+		<div class="menu bx">
+			<p>Duvidas</p>
+		</div>
+
+		<div class="menu bx">
+			<p>Institucional</p>
+		</div>
+
+	</div>
+
+	<div id="cliente1"> <!-- modal do cliente do primeiro slide -->
+
+		<div class="bx" > 
+			<button id="b1" class="x"> <!-- botão x -->
+				<div class="linha li1"></div>
+				<div class="linha li2"></div>
+				<div class="linha li3"></div>
+			</button>
+
+			<div class="titulo">
+				<p>Modal que abre com o cliente 1</p>
+			</div>
+		</div>
+
+		<div class="texto">
+			<p>Curabitur elementum elit at pulvinar bibendum. Nunc porttitor orci cursus tortor accumsan vulputate. Donec mollis ipsum a consequat aliquam. Donec molestie tellus nec neque aliquam tristique. Vivamus tristique sapien non arcu aliquam venenatis. Maecenas non diam id est cursus imperdiet nec et ipsum. Etiam nec velit fringilla nisi facilisis hendrerit vel nec erat.</p>
+			<br>
+			<p>Aenean vel leo et magna posuere dapibus. Ut placerat risus sapien, blandit tempus neque laoreet eget. Cras mollis tincidunt magna vel aliquet. Pellentesque sed purus at massa congue lobortis. Nunc risus magna, condimentum ultricies efficitur eu, eleifend eu enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec aliquet malesuada ante. Donec eget ipsum volutpat, pellentesque enim eget, bibendum lacus. Integer quis ipsum nec sapien rutrum euismod. Duis sed congue tellus. Maecenas quis nulla gravida ex elementum vehicula vitae id elit. Quisque at nunc eu massa fringilla sagittis. Donec rutrum nisl ut mi commodo rhoncus. Quisque fringilla quis nunc ac suscipit. Sed a volutpat lorem, et accumsan enim. Phasellus id nulla consectetur sem vulputate scelerisque.</p>
+		</div>
+
+	</div>
+
+	<div id="cliente2"><!--  modal do cleinte do segundo slide -->
+		<div class="bx" >
+			<button id="b2" class="x"> <!-- botão x -->
+				<div class="linha li1"></div>
+				<div class="linha li2"></div>
+				<div class="linha li3"></div>
+			</button>
+
+			<div class="titulo">
+				<p>Modal que abre com o cliente 2</p>
+			</div>
+		</div>
+
+		<div class="texto">
+			<p>Curabitur elementum elit at pulvinar bibendum. Nunc porttitor orci cursus tortor accumsan vulputate. Donec mollis ipsum a consequat aliquam. Donec molestie tellus nec neque aliquam tristique. Vivamus tristique sapien non arcu aliquam venenatis. Maecenas non diam id est cursus imperdiet nec et ipsum. Etiam nec velit fringilla nisi facilisis hendrerit vel nec erat.</p>
+			<br>
+			<p>Aenean vel leo et magna posuere dapibus. Ut placerat risus sapien, blandit tempus neque laoreet eget. Cras mollis tincidunt magna vel aliquet. Pellentesque sed purus at massa congue lobortis. Nunc risus magna, condimentum ultricies efficitur eu, eleifend eu enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec aliquet malesuada ante. Donec eget ipsum volutpat, pellentesque enim eget, bibendum lacus. Integer quis ipsum nec sapien rutrum euismod. Duis sed congue tellus. Maecenas quis nulla gravida ex elementum vehicula vitae id elit. Quisque at nunc eu massa fringilla sagittis. Donec rutrum nisl ut mi commodo rhoncus. Quisque fringilla quis nunc ac suscipit. Sed a volutpat lorem, et accumsan enim. Phasellus id nulla consectetur sem vulputate scelerisque.</p>
+		</div>
+	</div>
+
+	<div id="cliente3"> <!-- modal do cliente do terceiro slide -->
+		<div class="bx" > 
+			<button id="b3" class="x"> <!-- botão x -->
+				<div class="linha li1"></div>
+				<div class="linha li2"></div>
+				<div class="linha li3"></div>
+			</button>
+
+			<div class="titulo">
+				<p>Modal que abre com o cliente 3</p>
+			</div>
+		</div>
+
+		<div class="texto">
+			<p>Curabitur elementum elit at pulvinar bibendum. Nunc porttitor orci cursus tortor accumsan vulputate. Donec mollis ipsum a consequat aliquam. Donec molestie tellus nec neque aliquam tristique. Vivamus tristique sapien non arcu aliquam venenatis. Maecenas non diam id est cursus imperdiet nec et ipsum. Etiam nec velit fringilla nisi facilisis hendrerit vel nec erat.</p>
+			<br>
+			<p>Aenean vel leo et magna posuere dapibus. Ut placerat risus sapien, blandit tempus neque laoreet eget. Cras mollis tincidunt magna vel aliquet. Pellentesque sed purus at massa congue lobortis. Nunc risus magna, condimentum ultricies efficitur eu, eleifend eu enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec aliquet malesuada ante. Donec eget ipsum volutpat, pellentesque enim eget, bibendum lacus. Integer quis ipsum nec sapien rutrum euismod. Duis sed congue tellus. Maecenas quis nulla gravida ex elementum vehicula vitae id elit. Quisque at nunc eu massa fringilla sagittis. Donec rutrum nisl ut mi commodo rhoncus. Quisque fringilla quis nunc ac suscipit. Sed a volutpat lorem, et accumsan enim. Phasellus id nulla consectetur sem vulputate scelerisque.</p>
+		</div>
+
+	</div>
+
+	<div id="cliente4"> <!-- modal do cliente do quarto slide -->
+		<div class="bx" > 
+			<button id="b4" class="x"> <!-- botão x -->
+				<div class="linha li1"></div>
+				<div class="linha li2"></div>
+				<div class="linha li3"></div>
+			</button>
+
+			<div class="titulo">
+				<p>Modal que abre com o cliente 4</p>
+			</div>
+		</div>
+
+		<div class="texto">
+			<p>Curabitur elementum elit at pulvinar bibendum. Nunc porttitor orci cursus tortor accumsan vulputate. Donec mollis ipsum a consequat aliquam. Donec molestie tellus nec neque aliquam tristique. Vivamus tristique sapien non arcu aliquam venenatis. Maecenas non diam id est cursus imperdiet nec et ipsum. Etiam nec velit fringilla nisi facilisis hendrerit vel nec erat.</p>
+			<br>
+			<p>Aenean vel leo et magna posuere dapibus. Ut placerat risus sapien, blandit tempus neque laoreet eget. Cras mollis tincidunt magna vel aliquet. Pellentesque sed purus at massa congue lobortis. Nunc risus magna, condimentum ultricies efficitur eu, eleifend eu enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec aliquet malesuada ante. Donec eget ipsum volutpat, pellentesque enim eget, bibendum lacus. Integer quis ipsum nec sapien rutrum euismod. Duis sed congue tellus. Maecenas quis nulla gravida ex elementum vehicula vitae id elit. Quisque at nunc eu massa fringilla sagittis. Donec rutrum nisl ut mi commodo rhoncus. Quisque fringilla quis nunc ac suscipit. Sed a volutpat lorem, et accumsan enim. Phasellus id nulla consectetur sem vulputate scelerisque.</p>
+		</div>
+
+	</div>
+
+	<div id="carrossel"> <!-- carrosel dos clientes -->
+
+		<div id="imagens"> <!-- slides do carrossel -->
+			
+			<img src="img/bradesco.png" id="img1" alt ="Logo tipo do banco bradesco">
+			
+			<img src="img/habibis.png" id="img2" alt="Logotipo do Fastfood Habibis">
+
+			<img src="img/comite_br.png" id="img3" alt="Logotipo do Comitê Olimpico Brasileiro ">
+
+			<img src="img/nestle.png" id="img4" alt="Logotipo da empresa Nestle">
+		</div>	
+
+		<div id="form_carrosel"> <!-- navegação do carrossel -->
+			<form>
+				<input type="radio" id="slide1" name="slide" class="op" checked>
+				<label for="slide1"></label>		
+
+				<input type="radio" id="slide2" name="slide" class="op">
+				<label for="slide2"></label>
+
+				<input type="radio" id="slide3" name="slide" class="op">
+				<label for="slide3"></label>
+
+				<input type="radio" id="slide4" name="slide" class="op">
+				<label for="slide4"></label>
+			</form>
+		</div>
+	</div>
+
+	<div id="video">
+		<div class="embed-container"> 
+			<iframe src="https://www.youtube.com/embed/SNggmeilXDQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+
+<!-- 	Visibility: hdiden = esconde
+		display: none = some totalmente
+	-->
+</body>
+</html>
